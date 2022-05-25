@@ -21,6 +21,12 @@ player1TotalScore += randomThrow;
    document.getElementById("player1Score").innerHTML = player1TotalScore; 
 
 
+   if(randomThrow === 1) {
+    alert("Uh oh you player 1 you rolled a 1! Game over")
+  } else {
+
+
+  }
 
   if(player1TotalScore >= 20) {
     alert("Player 1 is the winner!!!!")
@@ -28,12 +34,6 @@ player1TotalScore += randomThrow;
 
   }
 
-  if(player1TotalScore === 1) {
-    alert("uh oh you rolled a 1! Game over")
-  } else {
-
-
-  }
 
 
  })
@@ -59,14 +59,15 @@ player1TotalScore += randomThrow;
   } else {
 
   }
+  
 
-
-  if(player2TotalScore === 1) {
-    alert("uh oh you rolled a 1! Game over")
+  if(randomThrow === 1) {
+    alert("Uh oh you player 2 you rolled a 1! Game over")
   } else {
 
 
   }
+
 
  
  })
