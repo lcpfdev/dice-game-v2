@@ -28,14 +28,16 @@ player1TotalScore += randomThrow;
 
   }
 
+  if(player1TotalScore === 1) {
+    alert("uh oh you rolled a 1! Game over")
+  } else {
+
+
+  }
 
 
  })
 
-
-
-
- 
 
 
  document.getElementById("rollBtn2").addEventListener('click', () => {
@@ -58,27 +60,63 @@ player1TotalScore += randomThrow;
 
   }
 
+
+  if(player2TotalScore === 1) {
+    alert("uh oh you rolled a 1! Game over")
+  } else {
+
+
+  }
+
  
  })
 
 
- document.getElementById("holdBtn").addEventListener('click', () => {
- 
-      if(rollBtn1.style.visibility === 'visible') {
-        rollBtn1.style.visibility = 'hidden'
+ document.getElementById("holdBtnPlayer1").addEventListener('click', () => {
+  rollBtn1.style.visibility = 'hidden';
+      if(rollBtn2.style.visibility === 'visible') {
+        rollBtn2.style.visibility = 'hidden'
       } else {
-        rollBtn1.style.visibility = 'visible'
+        rollBtn2.style.visibility = 'visible'
       }
     
-    // rollBtn1.style.visibility = 'hidden';
-
-
-
-
-
-
 
  })
+
+rollBtn2.style.visibility = 'hidden';
+
+
+ document.getElementById("holdBtnPlayer2").addEventListener('click', () => {
+  rollBtn2.style.visibility = 'hidden';
+  if(rollBtn1.style.visibility === 'visible') {
+    rollBtn1.style.visibility = 'hidden'
+  } else {
+    rollBtn1.style.visibility = 'visible'
+  }
+
+
+})
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ document.getElementById("refreshBtn").addEventListener('click', () => {
+
+  window.location.reload();
+
+ })
+
 
  
  
