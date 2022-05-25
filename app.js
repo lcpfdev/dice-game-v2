@@ -23,6 +23,7 @@ player1TotalScore += randomThrow;
 
    if(randomThrow === 1) {
     alert("Uh oh you player 1 you rolled a 1! Game over")
+    window.location.reload();
   } else {
 
 
@@ -30,6 +31,8 @@ player1TotalScore += randomThrow;
 
   if(player1TotalScore >= 20) {
     alert("Player 1 is the winner!!!!")
+    window.location.reload();
+ 
   } else {
 
   }
@@ -56,6 +59,8 @@ player1TotalScore += randomThrow;
 
    if(player2TotalScore >= 20) {
     alert("Player 2 is the winner!!!!")
+    window.location.reload();
+    
   } else {
 
   }
@@ -63,10 +68,9 @@ player1TotalScore += randomThrow;
 
   if(randomThrow === 1) {
     alert("Uh oh you player 2 you rolled a 1! Game over")
-  } else {
-
-
-  }
+    window.location.reload();
+  } 
+  
 
 
  
